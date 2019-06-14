@@ -7,7 +7,7 @@
 function tblciol() {
     $.ajax({
         type: "POST",
-        url: '',
+        url: '/Home/opportunitylist',
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (returndata) {

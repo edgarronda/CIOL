@@ -13,18 +13,22 @@ namespace CIOL.Controllers
             return View();
         }
 
-        public ActionResult About()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult Opportunitylist()
         {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
+            try
+            {
+                return Json("test");
+            }
+            catch (Exception e)
+            {
+                return Json(e);
+            }
         }
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
 
-            return View();
-        }
     }
 }
