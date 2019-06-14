@@ -24,7 +24,12 @@ namespace CIOL
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                       "~/Content/datatables.min.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+                   "~/Scripts/datatables.min.js",
+                   "~/Scripts/buttons.html5.min.js"));
         }
     }
 }
