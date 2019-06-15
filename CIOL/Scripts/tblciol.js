@@ -7,7 +7,7 @@
 function tblciol() {
     $.ajax({
         type: "POST",
-        url: '',
+        url: '/Home/Opportunitylist',
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         success: function (returndata) {
@@ -41,14 +41,14 @@ function tblciol() {
                 destroy: true,
                 data: returndata,
                 columns: [
-                    { data: "row_no", title: "No."},
-                    { data: "dateadded", title: "Date Added" },
-                    { data: "enteredby", title: "Entered By" },
+                    //{ data: "row_no", title: "No."},
+                    { data: "date_added", title: "Date Added" },
+                    { data: "entered_by", title: "Entered By" },
                     { data: "description", title: "Issue / Problem / Opportunity" },
-                    { data: "countermeasure", title: "Counter Measure" },
-                    { data: "responsible", title: "Person Responsible" },
-                    { data: "duedate", title: "Due Date" },
-                    { data: "comp", title: "Comp." }
+                    { data: "counter_measure", title: "Counter Measure" },
+                    { data: "person_responsible", title: "Person Responsible" },
+                    { data: "due_date", title: "Due Date" },
+                    { data: "completion_porcent", title: "Comp." }
                 ]                
             });
         },
