@@ -1,11 +1,11 @@
 USE [master]
 GO
 
-/****** Object:  Database [CIOL]    Script Date: 6/14/2019 3:10:41 PM ******/
+/****** Object:  Database [CIOL]    Script Date: 6/14/2019 5:01:37 PM ******/
 DROP DATABASE [CIOL]
 GO
 
-/****** Object:  Database [CIOL]    Script Date: 6/14/2019 3:10:41 PM ******/
+/****** Object:  Database [CIOL]    Script Date: 6/14/2019 5:01:37 PM ******/
 CREATE DATABASE [CIOL]
  CONTAINMENT = NONE
  ON  PRIMARY 
