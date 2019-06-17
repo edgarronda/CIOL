@@ -42,12 +42,34 @@ function tblciol() {
                 data: returndata,
                 columns: [
                     //{ data: "row_no", title: "No."},
-                    { data: "date_added", title: "Date Added" },
+                    {
+                        data: "date_added",
+                        title: "Date Added",
+                        createdCell: function (td, cellData, rowData, row, col) {
+                            $(td).css('cursor', 'pointer');
+                        },
+                        render: function (data, type, full) {
+                            var day = moment(data).format("MMM-DD-YYYY h:mm:ss a");
+                            console.log(day);
+                            return day;
+                        }
+                    },
                     { data: "entered_by", title: "Entered By" },
                     { data: "description", title: "Issue / Problem / Opportunity" },
                     { data: "counter_measure", title: "Counter Measure" },
                     { data: "person_responsible", title: "Person Responsible" },
-                    { data: "due_date", title: "Due Date" },
+                    {
+                        data: "due_date",
+                        title: "Due Date",
+                        createdCell: function (td, cellData, rowData, row, col) {
+                            $(td).css('cursor', 'pointer');
+                        },
+                        render: function (data, type, full) {
+                            var day = moment(data).format("MMM-DD-YYYY h:mm:ss a");
+                            console.log(day);
+                            return day;
+                        }
+                    },
                     { data: "completion_porcent", title: "Comp." }
                 ]                
             });
