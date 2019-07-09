@@ -1,6 +1,3 @@
-# CIOL
-Continuous Improvement Opportunity List
-
 # CIOL.
 
 Continuous Improvement Opportunity List
